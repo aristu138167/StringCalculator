@@ -1,13 +1,13 @@
 grumphp:
     tasks: 
-		phpunit:
+        phpunit:
             config_file: ~
             testsuite: ~
             group: []
             exclude_group: []
             always_execute: false
             order: null
-		phpcs:
+        phpcs:
             standard: []
             severity: ~
             error_severity: ~
@@ -22,7 +22,7 @@ grumphp:
             triggered_by: [php]
             exclude: []
             show_sniffs_error_path: true
-		phpmd:
+        phpmd:
             whitelist_patterns: []
             exclude: []
             report_format: text
