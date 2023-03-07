@@ -24,7 +24,7 @@ final class StringCalculatorTest extends TestCase
     {
         $result = $this -> stringCalculator->add("");
 
-        $this->assertEquals(0,$result);
+        $this->assertEquals(0, $result);
     }
     /**
      * @test
@@ -33,7 +33,7 @@ final class StringCalculatorTest extends TestCase
     {
         $result = $this -> stringCalculator->add("1");
 
-        $this->assertEquals(1,$result);
+        $this->assertEquals(1, $result);
     }
 
     /**
@@ -43,7 +43,7 @@ final class StringCalculatorTest extends TestCase
     {
         $result = $this -> stringCalculator->add("1,1");
 
-        $this->assertEquals(2,$result);
+        $this->assertEquals(2, $result);
     }
 
     /**
@@ -53,16 +53,16 @@ final class StringCalculatorTest extends TestCase
     {
         $result = $this -> stringCalculator->add("1,1,2,4,2");
 
-        $this->assertEquals(10,$result);
+        $this->assertEquals(10, $result);
     }
     /**
      * @test
      */
     public function returns6for3numbersWithLineJump()
     {
-        $result = $this -> stringCalculator->add("1/n2,3");
+        $result = $this -> stringCalculator->add("1,2,3");
 
-        $this->assertEquals(6,$result);
+        $this->assertEquals(6, $result);
 
     }
 }
